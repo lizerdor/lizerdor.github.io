@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background-color: #0a0a0a;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.game-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #00bfff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #009acd;
+}
+
+.order-form, .payment {
+    padding: 20px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+}
+
+.qris-img {
+    width: 200px;
+    margin-top: 20px;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.chat-icon {
+    background-color: #00bfff;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.chat-window {
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 200px;
+}
