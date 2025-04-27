@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam Gift Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Steam Gift Shop</h1>
+    </header>
+
+    <main>
+        <section class="games">
+            <div class="game-card">
+                <img src="assets/sample-game-1.jpg" alt="Game 1">
+                <h2>Game 1</h2>
+                <button onclick="orderNow('Game 1')">Order Now</button>
+            </div>
+            <div class="game-card">
+                <img src="assets/sample-game-2.jpg" alt="Game 2">
+                <h2>Game 2</h2>
+                <button onclick="orderNow('Game 2')">Order Now</button>
+            </div>
+        </section>
+
+        <section class="order-form" id="orderForm" style="display:none;">
+            <h2>Order Form</h2>
+            <form id="form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="game" readonly>
+                <button type="button" onclick="showQR()">Proceed to Payment</button>
+            </form>
+        </section>
+
+        <section class="payment" id="payment" style="display:none;">
+            <h2>Scan QRIS to Pay</h2>
+            <img src="assets/qris-dummy.png" alt="QRIS Payment" class="qris-img">
+            <p>After payment, please confirm to our admin via chat!</p>
+        </section>
+    </main>
+
+    <div class="chatbox" id="chatbox" onclick="toggleChat()">
+        <div class="chat-icon">💬</div>
+        <div class="chat-window" id="chatWindow" style="display:none;">
+            <p>Hi! Need help? Chat us!</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
